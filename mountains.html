@@ -8,7 +8,21 @@
   </head>
   <body>
     <main>
-      <h1>Mountains</h1>
+      <h1>Select a Mountain</h1>
+      <select class="form-select" id="mountains" onchange="filterByName()">
+        <option value="">Select...</option>
+      </select>
+
+      <div class="card" style="width: 18rem">
+        <img src="images/Adams-StoryImage_2.jpg" class="card-img-top" alt="Adams Story Photo" />
+        <div class="card-body">
+          <h5 class="card-title">Mt. Adams</h5>
+          <p class="card-text">
+            Mt. Adams (5,799') is the second highest peak in New England, offering spectacular views across the Great
+            Gulf and King Ravine.
+          </p>
+        </div>
+      </div>
     </main>
     <script src="scripts/mountainData.js"></script>
     <script src="scripts/mountains.js"></script>
