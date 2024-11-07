@@ -1,4 +1,42 @@
 "use strict";
+
+const locationRadio = document.querySelector("#locationRadio");
+const typeRadio = document.querySelector("#typeRadio");
+
+const locationContainer = document.querySelector("#locationContainer");
+const parkTypeContainer = document.querySelector("#parkTypeContainer");
+
+function searchTypeChanged() {
+  if (locationRadio.checked) {
+    locationContainer.style.display = "block";
+  } else {
+    locationContainer.style.display = "none";
+  }
+  if (typeRadio.checked) {
+    parkTypeContainer.style.display = "block";
+  } else {
+    parkTypeContainer.style.display = "none";
+  }
+}
+
+locationRadio.onchange = searchTypeChanged;
+typeRadio.onchange = searchTypeChanged;
+searchTypeChanged();
+
+function showSelect() {
+  console.log('hello')
+  let locationSelect = document.querySelector("#locationDropdown");
+  let parkSelect = document.querySelector("#parkTypeDropdown");
+  let locationRadio = document.querySelector("#locationRadio");
+  let typeRadio = document.querySelector("#typeRadio");
+  if (locationRadio.checked) {
+    locationSelect.style.display = "block";
+    console.log(locationSelect.style.display);
+  } else {
+    parkSelect.style.display = "block";
+    console.log(parkSelect.style.display);
+  }
+}
 let locationTBody = document.querySelector("#locationTBody");
 console.log(locationTBody);
 let locationDropdown = document.querySelector("#locationDropdown");
@@ -126,4 +164,8 @@ function filterByState() {
       tr.appendChild(td7);
     });
   }
+}
+
+function filterByParkType (){
+  
 }
