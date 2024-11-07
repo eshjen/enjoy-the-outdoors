@@ -54,7 +54,7 @@ function loadParks() {
 
 loadParks();
 
-function filterByLocation() {
+function filterByState() {
   let selectedState = locationDropdown.value;
   locationTBody.innerHTML = "";
   if (selectedState === "1") {
