@@ -4,26 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enjoy The Outdoors</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/yeti/bootstrap.min.css"
-      integrity="sha384-mLBxp+1RMvmQmXOjBzRjqqr0dP9VHU2tb3FK6VB0fJN/AOu7/y+CAeYeWJZ4b3ii"
-      crossorigin="anonymous"
-    />
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <header>
-      <ul class="nav nav-underline">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="national-parks.html">Parks</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="mountains.html">Mountain</a>
-        </li>
-      </ul>
+
+  <body class="w3-content" style="max-width: 1200px">
+    <header class="container d-flex justify-content-center align-items-center" style="padding: 2rem;">
+      <nav class="navbar">
+        <div class="navbar-links"></div>
+        <a href="index.html"><img src="./images/logo.svg" alt="Home" /></a>
+        <a href="national-parks.html">Parks</a>
+        <a href="mountains.html">Mountains</a>
+      </nav>
     </header>
+    <!-- First Grid: Logo & About -->
+    <div class="w3-row">
+      <div class="w3-half w3-container">
+        <h1 class="w3-xxlarge w3-text-light-grey">Hello</h1>
+        <h1 class="w3-xxlarge w3-text-grey">We are</h1>
+        <h1 class="w3-jumbo">National Parks</h1>
+      </div>
+      <div class="w3-half w3-container w3-xlarge w3-text-grey">
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptate.</p>
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+    </div>
+
+    <!-- Second Grid: Resent -->
+    <div class="w3-panel w3-text-grey">
+      <h4>Enjoy The Outdoors</h4>
+    </div>
+    <div class="w3-row">
+      <div class="w3-half w3-container">
+        <img src="images/Osceola-StoryImage_2.jpg" style="width: 100%" />
+      </div>
+      <div class="w3-half w3-container">
+        <img src="images/Monroe-StoryImage_2.jpg" style="width: 100%" />
+        <p class="w3-xlarge w3-text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, assumenda.</p>
+      </div>
+    </div>
   </body>
 </html>
